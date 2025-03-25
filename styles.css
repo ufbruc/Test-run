@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(98, 255, 242, 0.8), rgba(255, 255, 255, 0.8)), 
+    background: linear-gradient(rgba(98, 255, 242, 0.8), rgba(255, 255, 255, 0.99)), 
                 url('photos/photo2.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -25,14 +25,21 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
 #mainPhoto {
-    width: 100%;
+    width: 70%;
     height: 100vh;
-    object-fit: contain;
+    
+    border: 40px solid transparent; /* Set the border width */
+    border-image-source: url('photos/tvbackground.png'); /* Path to your TV image */
+    border-image-slice: 34; 
+    border-image-repeat: stretch; 
+    display: block;
+    margin: 0 auto;
+    outline: 5px solid rgb(0, 0, 0); 
+    border-radius: 20px; 
 }
 
-/* Clickable areas on the image */
+
 .clickable-area {
     position: absolute;
     cursor: pointer;
