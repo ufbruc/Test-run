@@ -19,7 +19,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .button {
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -39,8 +39,8 @@ body {
     width: 70%;
     height: 100vh;
     
-    border: 40px solid transparent; /* Set the border width */
-    border-image-source: url('photos/tvbackground.png'); /* Path to your TV image */
+    border: 40px solid transparent;
+    border-image-source: url('photos/tvbackground.png'); 
     border-image-slice: 34; 
     border-image-repeat: stretch; 
     display: block;
@@ -49,7 +49,29 @@ body {
     border-radius: 20px; 
 }
 
+.homepage-button {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.homepage-button::before {
+    content: '\1F3E0 Go back';
+    font-size: 18px;
+    color: white;
+}
+.homepage-button:hover {
+    background-color: #0056b3;
+}
 
 .clickable-area {
     position: absolute;
@@ -123,7 +145,7 @@ body {
 }
 
 .next::after {
-    right: 35px;
+    right: 35px;    
     transform: translateY(-50%) rotate(45deg);
 }
 
